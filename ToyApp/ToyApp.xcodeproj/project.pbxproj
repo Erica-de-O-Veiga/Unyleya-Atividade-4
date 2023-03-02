@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EC3C943BFAF3E9E72F1D09F /* Pods_ToyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E0EF302BC903B5778F31AB /* Pods_ToyApp.framework */; };
+		EC1FC3C229A926F90076BB5C /* ToyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FC3C129A926F90076BB5C /* ToyTableViewController.swift */; };
+		EC1FC3C429A927DD0076BB5C /* ToyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FC3C329A927DD0076BB5C /* ToyItem.swift */; };
+		EC8DC1B129A8FEA3006D5E34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8DC1B029A8FEA3006D5E34 /* AppDelegate.swift */; };
+		EC8DC1B329A8FEA3006D5E34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8DC1B229A8FEA3006D5E34 /* SceneDelegate.swift */; };
+		EC8DC1B529A8FEA3006D5E34 /* ToyFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8DC1B429A8FEA3006D5E34 /* ToyFormViewController.swift */; };
+		EC8DC1B829A8FEA3006D5E34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8DC1B629A8FEA3006D5E34 /* Main.storyboard */; };
+		EC8DC1BA29A8FEA4006D5E34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC8DC1B929A8FEA4006D5E34 /* Assets.xcassets */; };
+		EC8DC1BD29A8FEA4006D5E34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8DC1BB29A8FEA4006D5E34 /* LaunchScreen.storyboard */; };
+		EC8DC1C529A90015006D5E34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC8DC1C429A90015006D5E34 /* GoogleService-Info.plist */; };
+		ECA7919F29AFC6DE0081FD6B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = ECA7919E29AFC6DE0081FD6B /* FirebaseDatabase */; };
+		ECA791A129AFC6DE0081FD6B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = ECA791A029AFC6DE0081FD6B /* FirebaseFirestore */; };
+		ECA791A329AFC6DE0081FD6B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = ECA791A229AFC6DE0081FD6B /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		032C94646CEB809EECEC8D79 /* Pods-ToyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyApp.debug.xcconfig"; path = "Target Support Files/Pods-ToyApp/Pods-ToyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		6097FE1549E3300AEEDAD9C5 /* Pods-ToyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyApp.release.xcconfig"; path = "Target Support Files/Pods-ToyApp/Pods-ToyApp.release.xcconfig"; sourceTree = "<group>"; };
+		75E0EF302BC903B5778F31AB /* Pods_ToyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC1FC3C129A926F90076BB5C /* ToyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyTableViewController.swift; sourceTree = "<group>"; };
+		EC1FC3C329A927DD0076BB5C /* ToyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyItem.swift; sourceTree = "<group>"; };
+		EC8DC1AD29A8FEA3006D5E34 /* ToyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC8DC1B029A8FEA3006D5E34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC8DC1B229A8FEA3006D5E34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EC8DC1B429A8FEA3006D5E34 /* ToyFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyFormViewController.swift; sourceTree = "<group>"; };
+		EC8DC1B729A8FEA3006D5E34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC8DC1B929A8FEA4006D5E34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC8DC1BC29A8FEA4006D5E34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC8DC1BE29A8FEA4006D5E34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC8DC1C429A90015006D5E34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC8DC1AA29A8FEA3006D5E34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA7919F29AFC6DE0081FD6B /* FirebaseDatabase in Frameworks */,
+				ECA791A329AFC6DE0081FD6B /* FirebaseStorage in Frameworks */,
+				ECA791A129AFC6DE0081FD6B /* FirebaseFirestore in Frameworks */,
+				2EC3C943BFAF3E9E72F1D09F /* Pods_ToyApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		958E1294BB90AF05E267B49B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75E0EF302BC903B5778F31AB /* Pods_ToyApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC8DC1A429A8FEA3006D5E34 = {
+			isa = PBXGroup;
+			children = (
+				EC8DC1AF29A8FEA3006D5E34 /* ToyApp */,
+				EC8DC1AE29A8FEA3006D5E34 /* Products */,
+				F1D6B3C32EC782BD50A418EE /* Pods */,
+				958E1294BB90AF05E267B49B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 0;
+		};
+		EC8DC1AE29A8FEA3006D5E34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC8DC1AD29A8FEA3006D5E34 /* ToyApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC8DC1AF29A8FEA3006D5E34 /* ToyApp */ = {
+			isa = PBXGroup;
+			children = (
+				EC8DC1C429A90015006D5E34 /* GoogleService-Info.plist */,
+				EC8DC1B029A8FEA3006D5E34 /* AppDelegate.swift */,
+				EC8DC1B229A8FEA3006D5E34 /* SceneDelegate.swift */,
+				EC8DC1B429A8FEA3006D5E34 /* ToyFormViewController.swift */,
+				EC1FC3C129A926F90076BB5C /* ToyTableViewController.swift */,
+				EC1FC3C329A927DD0076BB5C /* ToyItem.swift */,
+				EC8DC1B629A8FEA3006D5E34 /* Main.storyboard */,
+				EC8DC1B929A8FEA4006D5E34 /* Assets.xcassets */,
+				EC8DC1BB29A8FEA4006D5E34 /* LaunchScreen.storyboard */,
+				EC8DC1BE29A8FEA4006D5E34 /* Info.plist */,
+			);
+			path = ToyApp;
+			sourceTree = "<group>";
+		};
+		F1D6B3C32EC782BD50A418EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				032C94646CEB809EECEC8D79 /* Pods-ToyApp.debug.xcconfig */,
+				6097FE1549E3300AEEDAD9C5 /* Pods-ToyApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC8DC1AC29A8FEA3006D5E34 /* ToyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC8DC1C129A8FEA4006D5E34 /* Build configuration list for PBXNativeTarget "ToyApp" */;
+			buildPhases = (
+				6BA0FE83C08123A74571B8CA /* [CP] Check Pods Manifest.lock */,
+				EC8DC1A929A8FEA3006D5E34 /* Sources */,
+				EC8DC1AA29A8FEA3006D5E34 /* Frameworks */,
+				EC8DC1AB29A8FEA3006D5E34 /* Resources */,
+				D3C1A1CF0AC830EAFC7591AD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToyApp;
+			packageProductDependencies = (
+				ECA7919E29AFC6DE0081FD6B /* FirebaseDatabase */,
+				ECA791A029AFC6DE0081FD6B /* FirebaseFirestore */,
+				ECA791A229AFC6DE0081FD6B /* FirebaseStorage */,
+			);
+			productName = ToyApp;
+			productReference = EC8DC1AD29A8FEA3006D5E34 /* ToyApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC8DC1A529A8FEA3006D5E34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					EC8DC1AC29A8FEA3006D5E34 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = EC8DC1A829A8FEA3006D5E34 /* Build configuration list for PBXProject "ToyApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC8DC1A429A8FEA3006D5E34;
+			packageReferences = (
+				ECA7919D29AFC6DE0081FD6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = EC8DC1AE29A8FEA3006D5E34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC8DC1AC29A8FEA3006D5E34 /* ToyApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC8DC1AB29A8FEA3006D5E34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC8DC1BD29A8FEA4006D5E34 /* LaunchScreen.storyboard in Resources */,
+				EC8DC1C529A90015006D5E34 /* GoogleService-Info.plist in Resources */,
+				EC8DC1BA29A8FEA4006D5E34 /* Assets.xcassets in Resources */,
+				EC8DC1B829A8FEA3006D5E34 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6BA0FE83C08123A74571B8CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToyApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3C1A1CF0AC830EAFC7591AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToyApp/Pods-ToyApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToyApp/Pods-ToyApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ToyApp/Pods-ToyApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC8DC1A929A8FEA3006D5E34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC1FC3C429A927DD0076BB5C /* ToyItem.swift in Sources */,
+				EC8DC1B529A8FEA3006D5E34 /* ToyFormViewController.swift in Sources */,
+				EC8DC1B129A8FEA3006D5E34 /* AppDelegate.swift in Sources */,
+				EC1FC3C229A926F90076BB5C /* ToyTableViewController.swift in Sources */,
+				EC8DC1B329A8FEA3006D5E34 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EC8DC1B629A8FEA3006D5E34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC8DC1B729A8FEA3006D5E34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC8DC1BB29A8FEA4006D5E34 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC8DC1BC29A8FEA4006D5E34 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC8DC1BF29A8FEA4006D5E34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC8DC1C029A8FEA4006D5E34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC8DC1C229A8FEA4006D5E34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 032C94646CEB809EECEC8D79 /* Pods-ToyApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ToyApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.edu.unyleya-erica.ToyApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_DOCUMENTATION_COMPILER = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC8DC1C329A8FEA4006D5E34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6097FE1549E3300AEEDAD9C5 /* Pods-ToyApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ToyApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.edu.unyleya-erica.ToyApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_DOCUMENTATION_COMPILER = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC8DC1A829A8FEA3006D5E34 /* Build configuration list for PBXProject "ToyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8DC1BF29A8FEA4006D5E34 /* Debug */,
+				EC8DC1C029A8FEA4006D5E34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC8DC1C129A8FEA4006D5E34 /* Build configuration list for PBXNativeTarget "ToyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8DC1C229A8FEA4006D5E34 /* Debug */,
+				EC8DC1C329A8FEA4006D5E34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ECA7919D29AFC6DE0081FD6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ECA7919E29AFC6DE0081FD6B /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECA7919D29AFC6DE0081FD6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		ECA791A029AFC6DE0081FD6B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECA7919D29AFC6DE0081FD6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		ECA791A229AFC6DE0081FD6B /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECA7919D29AFC6DE0081FD6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EC8DC1A529A8FEA3006D5E34 /* Project object */;
+}
